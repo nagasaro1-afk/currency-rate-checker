@@ -4,7 +4,7 @@ A web app that shows live exchange rates for about 160 currencies. Pick a base c
 
 ## Links
 
-- **Demo video (max 2 min):** PASTE_YOUR_VIDEO_LINK_HERE
+- **Demo video (max 2 min):** https://youtu.be/1nxQVmDqsJs
 - **Deployed app (through the load balancer):** https://localhost:4443 (runs in the ALU web infrastructure lab on Docker, so it is reachable from the machine running the lab; see the demo video for the live proof)
 - **Web01:** http://localhost:8080
 - **Web02:** http://localhost:8081
