@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Currency Rate Checker</title>
 <link rel="stylesheet" href="style.css">
- </head>   
- <body>
-  <h1> Currency Rate Checker</h1>
-  <input id="amt" type="number" value="1">
-  <select id="base"></select>  
-   <select id="q" placeholder="Search e.g RWF">
-    <select id="sort"><option value="1">Rate high to low</option><option value="-1">Rate low to high</option></select>
-    <p id="'msg"></p>
-    <table id="t"></table>
-    <footer>Rates by <a href="https://www.exchangerate-api.com">ExchangeRate-API</a></footer>
-    <script src="script.js"></script>
- </body>
+</head>
+<body>
+<div class="card">
+  <h1>Currency Rate Checker</h1>
+  <p class="sub">See how much of every currency you get for your amount.</p>
+  <div class="controls">
+    <label>Amount <input id="amt" type="number" value="1" min="0"></label>
+    <label>From <select id="base"></select></label>
+    <label>Search <input id="q" placeholder="e.g. RWF"></label>
+    <label>Sort <select id="sort"><option value="1">Rate high to low</option><option value="-1">Rate low to high</option></select></label>
+  </div>
+  <p id="msg">Loading...</p>
+  <div class="box"><table id="t"></table></div>
+  <footer>Rates by <a href="https://www.exchangerate-api.com">ExchangeRate-API</a></footer>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
