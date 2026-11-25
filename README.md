@@ -128,7 +128,7 @@ How it works: the `upstream` block lists both web servers and nginx distributes 
 Open https://localhost:4443 (accept the self-signed certificate warning: Advanced, then Proceed). Then check the balancing from PowerShell:
 
 ```
-1..4 | % { curl.exe -sk -I https://localhost:4443 | Select-String x-served-by
+1..4 | % { curl.exe -sk -I https://localhost:4443 | Select-String x-served-by}
 ```
 
 Run it several times. The header alternates between `172.25.0.11:80` (Web01) and `172.25.0.12:80` (Web02), which confirms traffic is shared between both servers. The app works the same whichever server answers.
