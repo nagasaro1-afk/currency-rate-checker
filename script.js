@@ -9,7 +9,7 @@ async function load() {
         if (!$('base').value) $('base').innerHTML = Object.keys(rates).map(c => `<option>${c}`).join('');
         $('base').value = d.base_code;
         $('msg').textContent = 'Updated: ' + d.time_last_update_utc;
-        Show();
+        show();
     } catch (e) {
         $('msg').textContent = ' Could not load rates: ' + e;  
     }
